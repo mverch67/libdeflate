@@ -1,0 +1,33 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "libdeflate",
+    "version": "1.23",
+    "description": "A fast, low-memory, and simple zlib replacement for embedded systems",
+    "keywords": "zlib, gzip, deflate, compression, decompression",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ebiggers/libdeflate"
+    },
+    "authors": [
+      {
+        "name": "ebiggers",
+        "maintainer": false
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ebiggers/libdeflate",
+    "frameworks": "Arduino",
+    "platforms": "espressif32",
+    "headers": ["libdeflate.h"],
+    "dependencies": {},
+    "build": {
+      "libArchive": true,
+      "includeDir": "lib",
+      "flags": [
+        "-I.",
+        "-Ilib"
+      ],
+      "srcDir": "lib"
+    }
+  }
+  
